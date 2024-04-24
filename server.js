@@ -48,7 +48,7 @@ app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 
 db.sequelize
-  .sync({ force: true }) 
+  .sync({ force: false}) 
   .then(() => {
     console.log("Drop and re-sync db.");
   })
