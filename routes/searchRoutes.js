@@ -49,13 +49,11 @@
  *             schema:
  *               type: array
  *               items:
- *                 $ref: '#/components/schemas/User'
  *       500:
  *         description: Failed to retrieve results
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Error'
  */
 
 /**
