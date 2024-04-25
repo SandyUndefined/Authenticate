@@ -33,8 +33,6 @@
  *               properties:
  *                 token:
  *                   type: string
- *                 user:
- *                   $ref: '#/components/schemas/User'
  *       401:
  *         description: Unauthorized
  */
