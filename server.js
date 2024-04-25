@@ -57,6 +57,9 @@ db.sequelize
     console.log("Failed to sync db: " + err.message);
   });
 
+app.get("/", (req, res) => {
+  res.send("Authenticate API Running");
+});
 // Routes
 app.use("/api/users", userRoutes);
 app.use("/api/search", searchRoutes);
