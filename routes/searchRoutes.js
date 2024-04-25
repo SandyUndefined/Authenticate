@@ -52,6 +52,9 @@
  *         description: Failed to retrieve results
  *         content:
  *           application/json:
+ *              schema:
+ *               type: array
+ *               items:
  */
 
 /**
