@@ -1,6 +1,6 @@
 /**
  * @swagger
- * /api/search/name:
+ * /api/search/
  *   get:
  *     summary: Search users by name
  *     description: Retrieves a list of users whose names contain the query string, prioritizing those who start with it.
