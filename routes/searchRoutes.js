@@ -107,7 +107,7 @@ const { verifyToken } = require("../middlewares/auth");
 const router = express.Router();
 
 router.get("/name/:name", verifyToken, searchByName);
-router.get("/phone/:phone", verifyToken, searchByPhoneNumber);
+router.get("/phone/:phon", verifyToken, searchByPhoneNumber);
 router.post("/spam", verifyToken, markAsSpam);
 
 module.exports = router;

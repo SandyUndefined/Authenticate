@@ -49,6 +49,7 @@ exports.searchByName = async (req, res) => {
 };
 
 exports.searchByPhoneNumber = async (req, res) => {
+  console.log(req.query);
   try {
     const { phoneNumber } = req.query;
     const results = await db.users.findAll({
