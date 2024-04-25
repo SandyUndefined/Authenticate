@@ -93,7 +93,7 @@ exports.markAsSpam = async (req, res) => {
     const { phoneNumber } = req.body;
     const [contact, created] = await db.contacts.findOrCreate({
       where: { phoneNumber },
-      defaults: { isSpam: true },
+      defaults: { isSpam: true,phoneNumber,name:"Unknown" },
     });
 
     if (!created) {
