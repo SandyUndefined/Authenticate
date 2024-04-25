@@ -21,18 +21,19 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Swagger definition
 const swaggerDefinition = {
-    openapi: '3.0.0',
-    info: {
-        title: 'Phone Directory API',
-        version: '1.0.0',
-        description: 'This is a REST API application made with Express. It retrieves data from a phone directory.',
+  openapi: "3.0.0",
+  info: {
+    title: "Phone Directory API",
+    version: "1.0.0",
+    description:
+      "This is a REST API application made with Express. It retrieves data from a phone directory.",
+  },
+  servers: [
+    {
+      url: "https://authenticate-uj52.onrender.com",
+      description: "Producton server",
     },
-    servers: [
-        {
-            url: 'http://localhost:3000',
-            description: 'Development server',
-        },
-    ],
+  ],
 };
 // Options for the swagger docs
 const options = {

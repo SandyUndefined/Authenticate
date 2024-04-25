@@ -2,23 +2,23 @@ const db = require("../models");
 
 const users = [
   {
-    name: "John Doe",
-    phoneNumber: "1234567890",
-    password: "hashedpassword",
-    email: "john@example.com",
+    name: "Sandeep",
+    phoneNumber: "7318724249",
+    password: "@Sandy098",
+    email: "sk@gmail.com",
   },
   {
-    name: "Jane Doe",
-    phoneNumber: "0987654321",
-    password: "hashedpassword",
-    email: "jane@example.com",
+    name: "Sandy",
+    phoneNumber: "7001441439",
+    password: "@Sandy098",
+    email: "sk12@gmail.com",
   },
 ];
 
 const contacts = [
-  { name: "John Doe", phoneNumber: "1234567890", userId: 1 },
-  { name: "Jane Smith", phoneNumber: "1122334455", userId: 1, isSpam: true },
-  { name: "Emily Doe", phoneNumber: "2233445566", userId: 2 },
+  { name: "Suraj", phoneNumber: "1234567890", userId: 1 },
+  { name: "Daddy", phoneNumber: "1122334455", userId: 1, isSpam: true },
+  { name: "Twitter", phoneNumber: "2233445566", userId: 2 },
 ];
 
 async function seedDB() {
