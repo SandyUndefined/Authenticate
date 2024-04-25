@@ -52,7 +52,7 @@ exports.searchByPhoneNumber = async (req, res) => {
   try {
     const { phoneNumber } = req.query;
     const results = await db.users.findAll({
-      where: { phoneNumber: phoneNumber },
+      where: { "phoneNumber": phoneNumber },
       include: [
         {
           model: db.contacts,
@@ -64,7 +64,7 @@ exports.searchByPhoneNumber = async (req, res) => {
 
     if (results.length === 0) {
       const contactResults = await db.contacts.findAll({
-        where: { phoneNumber: phoneNumber },
+        where: { "phoneNumber": phoneNumber },
         include: [
           {
             model: db.users,
