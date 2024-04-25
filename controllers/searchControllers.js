@@ -90,10 +90,10 @@ exports.searchByPhoneNumber = async (req, res) => {
 
 exports.markAsSpam = async (req, res) => {
   try {
-    const { phoneNumber,name } = req.body;
+    const { phoneNumber } = req.body;
     const [contact, created] = await db.contacts.findOrCreate({
       where: { phoneNumber },
-      defaults: { name,phoneNumber,isSpam: true },
+      defaults: { isSpam: true },
     });
 
     if (!created) {
