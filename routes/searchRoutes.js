@@ -1,6 +1,6 @@
 /**
  * @swagger
- * /api/search/
+ * /api/search/name/name:
  *   get:
  *     summary: Search users by name
  *     description: Retrieves a list of users whose names contain the query string, prioritizing those who start with it.
@@ -20,13 +20,11 @@
  *             schema:
  *               type: array
  *               items:
- *                 $ref: '#/components/schemas/User'
  *       500:
  *         description: Failed to retrieve results
  *         content:
  *           application/json:
  *             schema:
- *               $ref: '#/components/schemas/Error'
  */
 
 /**
