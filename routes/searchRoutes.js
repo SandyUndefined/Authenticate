@@ -24,7 +24,6 @@
  *         description: Failed to retrieve results
  *         content:
  *           application/json:
- *             schema:
  */
 
 /**
@@ -53,7 +52,6 @@
  *         description: Failed to retrieve results
  *         content:
  *           application/json:
- *             schema:
  */
 
 /**
@@ -94,8 +92,6 @@
  *         description: Error marking the number as spam
  *         content:
  *           application/json:
- *             schema:
- *               $ref: '#/components/schemas/Error'
  */
 
 const express = require("express");
