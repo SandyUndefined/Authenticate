@@ -3,6 +3,12 @@ const db = require("../models");
 exports.searchByName = async (req, res) => {
   try {
     const { name } = req.query;
+
+    // Check if the name parameter is provided in the query string
+    if (!name) {
+      return res.status(400).send({ message: "Name parameter is required" });
+    }
+
     const results = await db.users.findAll({
       where: db.Sequelize.where(
         db.Sequelize.fn("LOWER", db.Sequelize.col("name")),
