@@ -11,7 +11,7 @@ exports.searchByName = async (req, res) => {
 
     const results = await db.users.findAll({
       where: db.Sequelize.where(
-        db.Sequelize.fn("LOWER", db.Sequelize.col("name")),
+        db.Sequelize.fn("LOWER", db.Sequelize.col("contacts.name")),
         "LIKE",
         `%${name.toLowerCase()}%`
       ),
